@@ -1,6 +1,6 @@
 {
-  "version": "2026.03.21.4",
-  "generatedAt": 1774090000,
+  "version": "2026.03.21.5",
+  "generatedAt": 1774114102,
   "sites": {
     "facebook.com": {
       "hideFeed": {
@@ -36,6 +36,45 @@
         "forcePlaceholder": true,
         "placeholderTitle": "Instagram feed hidden by Veil",
         "placeholderSubtitle": "Scroll less, post with intention."
+      },
+      "hideReels": {
+        "selectors": [
+          "a[href=\"/reels/\"]",
+          "a[href*=\"/reels/\"]",
+          "a[href*=\"/reel/\"]",
+          "main a[href*=\"/reels/\"]"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": [
+          "/accounts",
+          "/direct"
+        ]
+      },
+      "hideExplore": {
+        "selectors": [
+          "a[href=\"/explore/\"]",
+          "a[href*=\"/explore/\"]"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": [
+          "/accounts",
+          "/direct"
+        ]
+      },
+      "hideNotificationBadge": {
+        "selectors": [
+          "span[style*=\"background-color: rgb(255, 48, 64)\"]",
+          "span[style*=\"background-color: rgb(237, 73, 86)\"]",
+          "span[style*=\"background-color:#ff3040\"]"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": []
       }
     },
     "linkedin.com": {
