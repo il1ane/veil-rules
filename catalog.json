@@ -22,7 +22,9 @@
         ],
         "feedPathPrefixes": ["/"],
         "excludedPathPrefixes": ["/direct", "/accounts"],
-        "forcePlaceholder": true
+        "forcePlaceholder": true,
+        "placeholderTitle": "Instagram feed hidden by Veil",
+        "placeholderSubtitle": "Scroll less, post with intention."
       }
     },
     "linkedin.com": {
