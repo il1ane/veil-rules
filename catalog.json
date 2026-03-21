@@ -1,5 +1,5 @@
 {
-  "version": "2026.03.21.1",
+  "version": "2026.03.21.2",
   "generatedAt": 1774090000,
   "sites": {
     "facebook.com": {
@@ -9,8 +9,14 @@
           "div[data-pagelet^='FeedUnit']",
           "#m_newsfeed_stream"
         ],
-        "feedPathPrefixes": ["/", "/home.php"],
-        "excludedPathPrefixes": ["/messages", "/notifications"],
+        "feedPathPrefixes": [
+          "/",
+          "/home.php"
+        ],
+        "excludedPathPrefixes": [
+          "/messages",
+          "/notifications"
+        ],
         "forcePlaceholder": true
       }
     },
@@ -20,8 +26,13 @@
           "main article",
           "main > *:not(#focusblock-feed-placeholder)"
         ],
-        "feedPathPrefixes": ["/"],
-        "excludedPathPrefixes": ["/direct", "/accounts"],
+        "feedPathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": [
+          "/direct",
+          "/accounts"
+        ],
         "forcePlaceholder": true,
         "placeholderTitle": "Instagram feed hidden by Veil",
         "placeholderSubtitle": "Scroll less, post with intention."
@@ -33,8 +44,14 @@
           "main .scaffold-finite-scroll",
           "main .feed-shared-update-v2"
         ],
-        "feedPathPrefixes": ["/", "/feed"],
-        "excludedPathPrefixes": ["/messaging", "/notifications"],
+        "feedPathPrefixes": [
+          "/",
+          "/feed"
+        ],
+        "excludedPathPrefixes": [
+          "/messaging",
+          "/notifications"
+        ],
         "forcePlaceholder": true
       }
     },
@@ -44,8 +61,24 @@
           "shreddit-feed",
           "main article[data-testid='post-container']"
         ],
-        "feedPathPrefixes": ["/", "/best", "/hot", "/new", "/top", "/r/"],
-        "excludedPathPrefixes": ["/notifications", "/message", "/messages", "/submit", "/search", "/settings", "/prefs", "/chat"],
+        "feedPathPrefixes": [
+          "/",
+          "/best",
+          "/hot",
+          "/new",
+          "/top",
+          "/r/"
+        ],
+        "excludedPathPrefixes": [
+          "/notifications",
+          "/message",
+          "/messages",
+          "/submit",
+          "/search",
+          "/settings",
+          "/prefs",
+          "/chat"
+        ],
         "forcePlaceholder": true
       }
     },
@@ -55,8 +88,15 @@
           "[aria-label='Timeline: Your Home Timeline']",
           "div[data-testid='primaryColumn'] [data-testid='cellInnerDiv']"
         ],
-        "feedPathPrefixes": ["/", "/home"],
-        "excludedPathPrefixes": ["/messages", "/notifications", "/search"],
+        "feedPathPrefixes": [
+          "/",
+          "/home"
+        ],
+        "excludedPathPrefixes": [
+          "/messages",
+          "/notifications",
+          "/search"
+        ],
         "forcePlaceholder": true
       }
     },
@@ -67,8 +107,15 @@
           "ytd-rich-item-renderer",
           "ytm-rich-item-renderer"
         ],
-        "feedPathPrefixes": ["/", "/feed"],
-        "excludedPathPrefixes": ["/watch", "/results", "/shorts"],
+        "feedPathPrefixes": [
+          "/",
+          "/feed"
+        ],
+        "excludedPathPrefixes": [
+          "/watch",
+          "/results",
+          "/shorts"
+        ],
         "forcePlaceholder": true
       }
     }
