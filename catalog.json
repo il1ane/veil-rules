@@ -1,6 +1,6 @@
 {
-  "version": "2026.03.21.7",
-  "generatedAt": 1774115734,
+  "version": "2026.03.24.1",
+  "generatedAt": 1774363912,
   "sites": {
     "facebook.com": {
       "hideFeed": {
@@ -41,9 +41,12 @@
       "hideReels": {
         "selectors": [
           "a[href=\"/reels/\"]",
+          "a[href=\"/reels\"]",
+          "a[href^=\"/reels/\"]",
           "a[href*=\"/reels/\"]",
           "a[href*=\"/reel/\"]",
-          "main a[href*=\"/reels/\"]"
+          "nav li:has(a[href*=\"/reels\"])",
+          "nav div:has(> a[href*=\"/reels\"])"
         ],
         "pathPrefixes": [
           "/"
@@ -56,7 +59,11 @@
       "hideExplore": {
         "selectors": [
           "a[href=\"/explore/\"]",
-          "a[href*=\"/explore/\"]"
+          "a[href=\"/explore\"]",
+          "a[href^=\"/explore/\"]",
+          "a[href*=\"/explore/\"]",
+          "nav li:has(a[href*=\"/explore\"])",
+          "nav div:has(> a[href*=\"/explore\"])"
         ],
         "pathPrefixes": [
           "/"
@@ -68,9 +75,11 @@
       },
       "hideNotificationBadge": {
         "selectors": [
-          "span[style*=\"background-color: rgb(255, 48, 64)\"]",
-          "span[style*=\"background-color: rgb(237, 73, 86)\"]",
-          "span[style*=\"background-color:#ff3040\"]"
+          "a[href*=\"/accounts/activity/\"] span[style*=\"background-color\"]",
+          "a[href*=\"/accounts/activity/\"] div[style*=\"background-color\"]",
+          "a[href*=\"/accounts/activity/\"] span[aria-label*=\"notification\" i]",
+          "a[href*=\"/accounts/activity/\"] span[aria-label*=\"new\" i]",
+          "a[href*=\"/accounts/activity/\"] span[aria-label*=\"nouvelle\" i]"
         ],
         "pathPrefixes": [
           "/"
@@ -79,6 +88,9 @@
       },
       "hideStories": {
         "selectors": [
+          "a[href*=\"/stories/\"]",
+          "section:has(a[href*=\"/stories/\"])",
+          "div[role=\"presentation\"]:has(a[href*=\"/stories/\"])",
           "div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3.x1xy6bms"
         ],
         "pathPrefixes": [
