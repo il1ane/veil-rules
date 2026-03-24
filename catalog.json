@@ -1,43 +1,9 @@
 {
-  "version": "2026.03.24.1",
-  "generatedAt": 1774363912,
+  "version": "2026.03.24.2",
+  "generatedAt": 1774364132,
   "sites": {
-    "facebook.com": {
-      "hideFeed": {
-        "selectors": [
-          "div[role='feed']",
-          "div[data-pagelet^='FeedUnit']",
-          "#m_newsfeed_stream"
-        ],
-        "feedPathPrefixes": [
-          "/",
-          "/home.php"
-        ],
-        "excludedPathPrefixes": [
-          "/messages",
-          "/notifications"
-        ],
-        "forcePlaceholder": true
-      }
-    },
+    "facebook.com": {},
     "instagram.com": {
-      "hideFeed": {
-        "selectors": [
-          "div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1",
-          "main > *:not(#focusblock-feed-placeholder)",
-          "main article"
-        ],
-        "feedPathPrefixes": [
-          "/"
-        ],
-        "excludedPathPrefixes": [
-          "/direct",
-          "/accounts"
-        ],
-        "forcePlaceholder": true,
-        "placeholderTitle": "Instagram feed hidden by Veil",
-        "placeholderSubtitle": "Scroll less, post with intention."
-      },
       "hideReels": {
         "selectors": [
           "a[href=\"/reels/\"]",
@@ -102,86 +68,9 @@
         ]
       }
     },
-    "linkedin.com": {
-      "hideFeed": {
-        "selectors": [
-          "main .scaffold-finite-scroll",
-          "main .feed-shared-update-v2"
-        ],
-        "feedPathPrefixes": [
-          "/",
-          "/feed"
-        ],
-        "excludedPathPrefixes": [
-          "/messaging",
-          "/notifications"
-        ],
-        "forcePlaceholder": true
-      }
-    },
-    "reddit.com": {
-      "hideFeed": {
-        "selectors": [
-          "shreddit-feed",
-          "main article[data-testid='post-container']"
-        ],
-        "feedPathPrefixes": [
-          "/",
-          "/best",
-          "/hot",
-          "/new",
-          "/top",
-          "/r/"
-        ],
-        "excludedPathPrefixes": [
-          "/notifications",
-          "/message",
-          "/messages",
-          "/submit",
-          "/search",
-          "/settings",
-          "/prefs",
-          "/chat"
-        ],
-        "forcePlaceholder": true
-      }
-    },
-    "x.com": {
-      "hideFeed": {
-        "selectors": [
-          "[aria-label='Timeline: Your Home Timeline']",
-          "div[data-testid='primaryColumn'] [data-testid='cellInnerDiv']"
-        ],
-        "feedPathPrefixes": [
-          "/",
-          "/home"
-        ],
-        "excludedPathPrefixes": [
-          "/messages",
-          "/notifications",
-          "/search"
-        ],
-        "forcePlaceholder": true
-      }
-    },
-    "youtube.com": {
-      "hideFeed": {
-        "selectors": [
-          "ytd-rich-grid-renderer",
-          "ytd-rich-item-renderer",
-          "ytm-rich-item-renderer"
-        ],
-        "feedPathPrefixes": [
-          "/",
-          "/feed"
-        ],
-        "excludedPathPrefixes": [
-          "/watch",
-          "/results",
-          "/shorts"
-        ],
-        "forcePlaceholder": true
-      }
-    }
+    "linkedin.com": {},
+    "reddit.com": {},
+    "x.com": {},
+    "youtube.com": {}
   }
 }

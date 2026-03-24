@@ -1,8 +1,8 @@
 {
-  "catalogSHA256" : "62989dd61f2c77db2f9a2051a91736dc86209c3ba47f4502a42f1c5baaa86cd0",
+  "catalogSHA256" : "e8d2a73834529523ce669b1515ae371bbf0861ac89a6c824f62de447e2ce1b12",
   "catalogURL" : "https://il1ane.github.io/veil-rules/catalog.json",
-  "generatedAt" : 1774363922.383821,
+  "generatedAt" : 1774364145.494148,
   "keyID" : "veil-prod-v1",
-  "signature" : "P6r2mTXliOpp01BIzMeDLE/5bmQdLuYsi4X3vRyszcxxZsThB47pMhglxHDoKd3dgMapSwRy7KsSewSL+FY8CQ==",
-  "version" : "2026.03.24.1"
+  "signature" : "0WqvdI6iPn4aH1flNiaJts/BZEuPZjTE33OJ+xBCIutJpz20mMBptuT2pEMK91Yu1932gmV5ESSBm+Q0LoVwBw==",
+  "version" : "2026.03.24.2"
 }
