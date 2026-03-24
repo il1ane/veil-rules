@@ -1,18 +1,18 @@
 {
-  "version": "2026.03.24.4",
-  "generatedAt": 1774365522,
+  "version": "2026.03.24.5",
+  "generatedAt": 1774366779,
   "sites": {
     "facebook.com": {},
     "instagram.com": {
       "hideReels": {
         "selectors": [
-          "a[href=\"/reels/\"]",
-          "a[href=\"/reels\"]",
-          "a[href^=\"/reels/\"]",
-          "a[href*=\"/reels/\"]",
           "a[href*=\"/reel/\"]",
-          "nav li:has(a[href*=\"/reels\"])",
-          "nav div:has(> a[href*=\"/reels\"])"
+          "a[href*=\"/reels/\"]",
+          "a[href=\"/reels\"]",
+          "a[href=\"/reels/\"]",
+          "a[href^=\"/reels/\"]",
+          "nav div:has(> a[href*=\"/reels\"])",
+          "nav li:has(a[href*=\"/reels\"])"
         ],
         "pathPrefixes": [
           "/"
@@ -24,12 +24,12 @@
       },
       "hideExplore": {
         "selectors": [
-          "a[href=\"/explore/\"]",
-          "a[href=\"/explore\"]",
-          "a[href^=\"/explore/\"]",
           "a[href*=\"/explore/\"]",
-          "nav li:has(a[href*=\"/explore\"])",
-          "nav div:has(> a[href*=\"/explore\"])"
+          "a[href=\"/explore\"]",
+          "a[href=\"/explore/\"]",
+          "a[href^=\"/explore/\"]",
+          "nav div:has(> a[href*=\"/explore\"])",
+          "nav li:has(a[href*=\"/explore\"])"
         ],
         "pathPrefixes": [
           "/"
@@ -54,13 +54,14 @@
       },
       "hideStories": {
         "selectors": [
-          "main [role=\"button\"][aria-label*=\"story by\" i]",
+          "[data-pagelet=\"story_tray\"]",
           "main [aria-label*=\"story by\" i]",
-          "main [role=\"button\"][aria-label*=\"story de\" i]",
           "main [aria-label*=\"story de\" i]",
+          "main [role=\"button\"][aria-label*=\"story by\" i]",
+          "main [role=\"button\"][aria-label*=\"story de\" i]",
+          "main div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3",
           "main div:has([aria-label*=\"story by\" i])",
-          "main div:has([aria-label*=\"story de\" i])",
-          "main div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3"
+          "main div:has([aria-label*=\"story de\" i])"
         ],
         "pathPrefixes": [
           "/"
