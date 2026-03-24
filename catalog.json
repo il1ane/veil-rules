@@ -1,6 +1,6 @@
 {
-  "version": "2026.03.24.6",
-  "generatedAt": 1774369220,
+  "version": "2026.03.24.7",
+  "generatedAt": 1774371011,
   "sites": {
     "facebook.com": {},
     "instagram.com": {
@@ -55,13 +55,10 @@
       "hideStories": {
         "selectors": [
           "[data-pagelet=\"story_tray\"]",
-          "main [aria-label*=\"story by\" i]",
-          "main [aria-label*=\"story de\" i]",
           "main [role=\"button\"][aria-label*=\"story by\" i]",
           "main [role=\"button\"][aria-label*=\"story de\" i]",
-          "main div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3",
-          "main div:has([aria-label*=\"story by\" i])",
-          "main div:has([aria-label*=\"story de\" i])"
+          "main [aria-label*=\"story by\" i]",
+          "main [aria-label*=\"story de\" i]"
         ],
         "pathPrefixes": [
           "/"
