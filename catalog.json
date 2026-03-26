@@ -1,6 +1,6 @@
 {
-  "version": "2026.03.26.1",
-  "generatedAt": 1774517341,
+  "version": "2026.03.26.2",
+  "generatedAt": 1774518089,
   "sites": {
     "facebook.com": {},
     "instagram.com": {
@@ -24,9 +24,6 @@
       },
       "hideExplore": {
         "selectors": [
-          "main",
-          "main > div",
-          "main > section",
           "a[href*=\"/explore/\"]",
           "a[href=\"/explore\"]",
           "a[href=\"/explore/\"]",
@@ -35,8 +32,7 @@
           "nav li:has(a[href*=\"/explore\"])"
         ],
         "pathPrefixes": [
-          "/explore",
-          "/explore/"
+          "/"
         ],
         "excludedPathPrefixes": [
           "/accounts",
