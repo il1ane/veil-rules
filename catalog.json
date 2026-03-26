@@ -1,6 +1,6 @@
 {
-  "version": "2026.03.24.7",
-  "generatedAt": 1774371011,
+  "version": "2026.03.26.1",
+  "generatedAt": 1774517341,
   "sites": {
     "facebook.com": {},
     "instagram.com": {
@@ -24,6 +24,9 @@
       },
       "hideExplore": {
         "selectors": [
+          "main",
+          "main > div",
+          "main > section",
           "a[href*=\"/explore/\"]",
           "a[href=\"/explore\"]",
           "a[href=\"/explore/\"]",
@@ -32,25 +35,13 @@
           "nav li:has(a[href*=\"/explore\"])"
         ],
         "pathPrefixes": [
-          "/"
+          "/explore",
+          "/explore/"
         ],
         "excludedPathPrefixes": [
           "/accounts",
           "/direct"
         ]
-      },
-      "hideNotificationBadge": {
-        "selectors": [
-          "a[href*=\"/accounts/activity/\"] span[style*=\"background-color\"]",
-          "a[href*=\"/accounts/activity/\"] div[style*=\"background-color\"]",
-          "a[href*=\"/accounts/activity/\"] span[aria-label*=\"notification\" i]",
-          "a[href*=\"/accounts/activity/\"] span[aria-label*=\"new\" i]",
-          "a[href*=\"/accounts/activity/\"] span[aria-label*=\"nouvelle\" i]"
-        ],
-        "pathPrefixes": [
-          "/"
-        ],
-        "excludedPathPrefixes": []
       },
       "hideStories": {
         "selectors": [
