@@ -1,6 +1,6 @@
 {
-  "version": "2026.03.28.2",
-  "generatedAt": 1774864200,
+  "version": "2026.03.28.3",
+  "generatedAt": 1774866000,
   "sites": {
     "facebook.com": {
       "hideReels": {
@@ -34,6 +34,15 @@
           "/messages",
           "/settings"
         ]
+      },
+      "hideNotificationBadge": {
+        "selectors": [
+          ".__veil_test_selector__"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": []
       },
       "hideFeed": {
         "selectors": [
