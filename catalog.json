@@ -1,8 +1,40 @@
 {
-  "version": "2026.03.26.2",
-  "generatedAt": 1774518089,
+  "version": "2026.03.28.1",
+  "generatedAt": 1774696600,
   "sites": {
-    "facebook.com": {},
+    "facebook.com": {
+      "hideFeed": {
+        "selectors": [
+          "div.x1hc1fzr.x1unhpq9.x6o7n8i",
+          "div[role='feed']",
+          "div[role='main'] > div[role='feed']",
+          "div[role='main'] [data-pagelet^='FeedUnit']",
+          "div[role='main'] [role='article']",
+          "#screen-root:has([aria-label='Facebook logo']) > div > div > :nth-child(n+7)",
+          "div[data-type='vscroller'] > div[data-dcm-id]",
+          "div[data-type='vscroller'] > div[data-tracking-duration-id]"
+        ],
+        "feedPathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": [
+          "/messages",
+          "/marketplace",
+          "/watch",
+          "/reel",
+          "/reels",
+          "/gaming",
+          "/groups",
+          "/events",
+          "/friends",
+          "/notifications",
+          "/settings"
+        ],
+        "forcePlaceholder": false,
+        "placeholderTitle": "Facebook feed hidden by Veil",
+        "placeholderSubtitle": "Keep Facebook useful, not endless."
+      }
+    },
     "instagram.com": {
       "hideReels": {
         "selectors": [
@@ -72,9 +104,99 @@
         "placeholderSubtitle": "Scroll less, post with intention."
       }
     },
-    "linkedin.com": {},
-    "reddit.com": {},
-    "x.com": {},
-    "youtube.com": {}
+    "linkedin.com": {
+      "hideFeed": {
+        "selectors": [
+          "#voyager-feed main#main[aria-label='Main Feed']",
+          ".scaffold-layout__content main[aria-label='Main Feed'] > div:has([data-finite-scroll-hotkey-context='FEED'])",
+          ".scaffold-layout__content main[aria-label='Main Feed'] > div:has(scaffold-finite-scroll__content)",
+          ".feed-shared-update-v2:not(section.fixed-full > .feed-shared-update-v2):not(div:not([data-id]) > .occludable-update > .feed-shared-update-v2)",
+          "div[data-testid='mainFeed']",
+          "div[componentkey*='mainFeed']"
+        ],
+        "feedPathPrefixes": [
+          "/feed"
+        ],
+        "excludedPathPrefixes": [],
+        "forcePlaceholder": false,
+        "placeholderTitle": "LinkedIn feed hidden by Veil",
+        "placeholderSubtitle": "Use LinkedIn with intention."
+      }
+    },
+    "reddit.com": {
+      "hideFeed": {
+        "selectors": [
+          ".PostsList",
+          "#siteTable",
+          "shreddit-feed",
+          "main article[data-testid='post-container']",
+          "div[data-testid='post-container']"
+        ],
+        "feedPathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": [
+          "/notifications",
+          "/message",
+          "/messages",
+          "/submit",
+          "/search",
+          "/settings",
+          "/prefs",
+          "/chat"
+        ],
+        "forcePlaceholder": false,
+        "placeholderTitle": "Reddit feed hidden by Veil",
+        "placeholderSubtitle": "Use Reddit with purpose."
+      }
+    },
+    "x.com": {
+      "hideFeed": {
+        "selectors": [
+          "[aria-label='Timeline: Your Home Timeline']",
+          "div[data-testid='primaryColumn'] [data-testid='cellInnerDiv']",
+          "main [aria-label='Timeline: Your Home Timeline']"
+        ],
+        "feedPathPrefixes": [
+          "/home"
+        ],
+        "excludedPathPrefixes": [],
+        "forcePlaceholder": false,
+        "placeholderTitle": "X feed hidden by Veil",
+        "placeholderSubtitle": "Read less noise, keep your focus."
+      }
+    },
+    "youtube.com": {
+      "hideFeed": {
+        "selectors": [
+          "[page-subtype='home'] #primary",
+          "[page-subtype='explore'] #primary",
+          "ytd-rich-grid-renderer",
+          "ytd-rich-item-renderer",
+          "[tab-title='Home']"
+        ],
+        "feedPathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": [
+          "/watch",
+          "/shorts",
+          "/results",
+          "/playlist",
+          "/channel",
+          "/@",
+          "/c/",
+          "/user/",
+          "/feed/subscriptions",
+          "/feed/library",
+          "/feed/history",
+          "/live",
+          "/clip"
+        ],
+        "forcePlaceholder": false,
+        "placeholderTitle": "YouTube feed hidden by Veil",
+        "placeholderSubtitle": "Watch what you chose, not what is pushed."
+      }
+    }
   }
 }
