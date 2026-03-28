@@ -1,5 +1,5 @@
 {
-  "version": "2026.03.28.5",
+  "version": "2026.03.28.6",
   "generatedAt": 1774869600,
   "sites": {
     "facebook.com": {
@@ -41,9 +41,40 @@
           "/settings"
         ]
       },
-      "hideNotificationBadge": {
+      "hideLikesComments": {
+        "label": "Hide Likes & Comments",
         "selectors": [
-          ".__veil_test_selector__"
+          "div.xabvvm4.xeyy32k.x1ia1hqs.x1a2w583.x6ikm8r.x10wlt62",
+          "div:has(>[aria-label*='like' i])"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideChatSidebar": {
+        "label": "Hide Chat Sidebar",
+        "selectors": [
+          ".fbChatSidebar",
+          "#BuddylistPagelet",
+          "[data-pagelet=\"ChatTab\"]",
+          "[aria-label=\"New Message\"]",
+          "[aria-label=\"New message\"]",
+          "[aria-label=\"Messenger\"]",
+          "[aria-label=\"Nieuw chatbericht\"]",
+          "[href*=\"/messages/\"]",
+          ".x1n2onr6.x1uc6qws.xyen2ro"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideMarketplace": {
+        "label": "Hide Marketplace",
+        "selectors": [
+          "[href*=\"/marketplace/\"]",
+          "[aria-label*=\"marketplace\" i]"
         ],
         "pathPrefixes": [
           "/"
@@ -134,6 +165,38 @@
           "/direct"
         ]
       },
+      "hideLikesComments": {
+        "label": "Hide Likes & Comments",
+        "selectors": [
+          "div._ae1h._ae1i._ae1l",
+          "div.xvbhtw8.x78zum5.xdt5ytf.x5yr21d.x1n2onr6"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": [
+          "/accounts",
+          "/direct"
+        ]
+      },
+      "hideSuggestedForYou": {
+        "label": "Hide Suggested For You",
+        "selectors": [
+          "div.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.xqui205.x1e56ztr.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1",
+          "div.x6s0dn4.xd18jyu.xso031l.x78zum5.x1q0g3np.x1ejq31n.x18oe1m7.xstzfhl.x1sy0etr.x1y1aw1k.xyri2b.xwxc41k.x1c1uobl",
+          "div.x6s0dn4.xd18jyu.xso031l.x78zum5.x1q0g3np.x1ejq31n.x18oe1m7.xstzfhl.x1sy0etr.x1y1aw1k.xyri2b.xwxc41k.x1c1uobl + div",
+          "article + div h3",
+          "article + div ~ article",
+          "article:has(> div:nth-of-type(2)):not(:has(> div:nth-of-type(3)))"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": [
+          "/accounts",
+          "/direct"
+        ]
+      },
       "hideFeed": {
         "selectors": [
           "div.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1",
@@ -153,12 +216,42 @@
     },
     "linkedin.com": {
       "hideExplore": {
+        "label": "Hide News",
         "selectors": [
           ".news-module",
           "#feed-news-module",
           "[data-test-id=\"news-module\"]",
           ".scaffold-layout__aside .feed-shared-news-module",
           ".scaffold-layout__aside [data-view-name=\"feed_news\"]"
+        ],
+        "pathPrefixes": [
+          "/",
+          "/feed"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideMessaging": {
+        "label": "Hide Messaging",
+        "selectors": [
+          "#msg-overlay",
+          ".msg-overlay-container",
+          "[data-nav-type=\"MESSAGING\"]"
+        ],
+        "pathPrefixes": [
+          "/",
+          "/feed"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideLikesComments": {
+        "label": "Hide Likes & Comments",
+        "selectors": [
+          ".update-v2-social-activity",
+          "[data-feed-action=\"socialActionsLabel\"]",
+          ".social-actions-panel",
+          "#comment-preview",
+          ".main-feed-activity-card__social-actions",
+          ".main-feed-activity-card__social-actions + div"
         ],
         "pathPrefixes": [
           "/",
@@ -193,11 +286,25 @@
     },
     "reddit.com": {
       "hideExplore": {
+        "label": "Hide Popular & All",
         "selectors": [
           "a[href$='/r/popular/']",
           "a[href$='/r/all/']",
           "a[href$='/r/popular']",
           "a[href$='/r/all']"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideComments": {
+        "label": "Hide Comments",
+        "selectors": [
+          ".commentarea",
+          ".CommentTree",
+          ".CommentsPage__tools",
+          "shreddit-comment-tree"
         ],
         "pathPrefixes": [
           "/"
@@ -243,6 +350,7 @@
         "excludedPathPrefixes": []
       },
       "hideExplore": {
+        "label": "Hide Explore & Trends",
         "selectors": [
           ".Trends",
           "[aria-label=\"Timeline: Trending now\"]",
@@ -251,6 +359,42 @@
         ],
         "pathPrefixes": [
           "/"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideForYou": {
+        "label": "Hide For You",
+        "selectors": [
+          ".for-you-timeline",
+          ".for-you"
+        ],
+        "pathPrefixes": [
+          "/",
+          "/home"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideWhoToFollow": {
+        "label": "Hide Who To Follow",
+        "selectors": [
+          ".wtf-module",
+          "[aria-label=\"Who to follow\"]"
+        ],
+        "pathPrefixes": [
+          "/",
+          "/home"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideTopics": {
+        "label": "Hide Topics",
+        "selectors": [
+          "[aria-label=\"Timeline: \"]",
+          "[href$=\"/topics\"]"
+        ],
+        "pathPrefixes": [
+          "/",
+          "/home"
         ],
         "excludedPathPrefixes": []
       },
@@ -282,6 +426,7 @@
         "excludedPathPrefixes": []
       },
       "hideExplore": {
+        "label": "Hide Explore & Trends",
         "selectors": [
           ".Trends",
           "[aria-label=\"Timeline: Trending now\"]",
@@ -290,6 +435,42 @@
         ],
         "pathPrefixes": [
           "/"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideForYou": {
+        "label": "Hide For You",
+        "selectors": [
+          ".for-you-timeline",
+          ".for-you"
+        ],
+        "pathPrefixes": [
+          "/",
+          "/home"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideWhoToFollow": {
+        "label": "Hide Who To Follow",
+        "selectors": [
+          ".wtf-module",
+          "[aria-label=\"Who to follow\"]"
+        ],
+        "pathPrefixes": [
+          "/",
+          "/home"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideTopics": {
+        "label": "Hide Topics",
+        "selectors": [
+          "[aria-label=\"Timeline: \"]",
+          "[href$=\"/topics\"]"
+        ],
+        "pathPrefixes": [
+          "/",
+          "/home"
         ],
         "excludedPathPrefixes": []
       },
@@ -310,6 +491,7 @@
     },
     "youtube.com": {
       "hideReels": {
+        "label": "Hide Shorts",
         "selectors": [
           "[aria-label=\"Shorts\"]",
           "[title=\"Shorts\"]",
@@ -319,6 +501,77 @@
           ".ytGridShelfViewModelGridShelfRow:has(ytm-shorts-lockup-view-model)",
           "ytm-reel-shelf-renderer",
           "[role=\"tab\"].pivot-shorts"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideSidebar": {
+        "label": "Hide Sidebar",
+        "selectors": [
+          "ytd-guide-renderer ytd-guide-section-renderer:not(:last-child)"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideBreakingNews": {
+        "label": "Hide Breaking News",
+        "selectors": [
+          "ytd-rich-section-renderer"
+        ],
+        "pathPrefixes": [
+          "/"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideComments": {
+        "label": "Hide Comments",
+        "selectors": [
+          "ytd-comments",
+          "ytm-comment-section-renderer",
+          "[section-identifier=\"comment-item-section\"]",
+          ".single-column-watch-next-modern-panels:not([section-identifier=\"related-items\"])"
+        ],
+        "pathPrefixes": [
+          "/watch",
+          "/shorts"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideUpNext": {
+        "label": "Hide Up Next",
+        "selectors": [
+          ".ytp-endscreen-content",
+          "ytd-watch-next-secondary-results-renderer",
+          "[data-content-type=\"related\"]",
+          ".ytp-ce-element.ytp-ce-video",
+          ".ytp-ce-element.ytp-ce-playlist",
+          ".ytp-fullscreen-grid",
+          "[section-identifier=\"related-items\"]"
+        ],
+        "pathPrefixes": [
+          "/watch",
+          "/shorts"
+        ],
+        "excludedPathPrefixes": []
+      },
+      "hideThumbnails": {
+        "label": "Hide Thumbnails",
+        "selectors": [
+          "#thumbnail img",
+          ".ytp-videowall-still-image",
+          ".video-thumbnail-img",
+          "#player.inline-on-thumbnail",
+          "yt-thumbnail-view-model img",
+          "ytm-shorts-lockup-view-model img",
+          "ytd-thumbnail img",
+          "ytd-playlist-thumbnail img",
+          "#thumbnail-container img",
+          ".shelf-skeleton .thumbnail img",
+          ".video-thumbnail-img img"
         ],
         "pathPrefixes": [
           "/"
