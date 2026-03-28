@@ -1,6 +1,6 @@
 {
-  "version": "2026.03.28.3",
-  "generatedAt": 1774866000,
+  "version": "2026.03.28.4",
+  "generatedAt": 1774867800,
   "sites": {
     "facebook.com": {
       "hideReels": {
@@ -25,7 +25,13 @@
           "[aria-label=\"Stories\"]",
           "[aria-label=\"Verhalen\"]",
           "[aria-label=\"Relacje\"]",
-          "#screen-root:has([aria-label=\"Facebook logo\"]) > div > div > :nth-child(6)"
+          "[aria-label*=\"story\" i]",
+          "[role=\"button\"][aria-label*=\"story\" i]",
+          "a[href*=\"/stories/\"]",
+          "div:has(> a[href*=\"/stories/\"])",
+          "div:has(> [aria-label*=\"story\" i])",
+          "#screen-root:has([aria-label=\"Facebook logo\"]) > div > div > :nth-child(6)",
+          "#screen-root:has([aria-label=\"Facebook logo\"]) > div > div > :nth-child(5)"
         ],
         "pathPrefixes": [
           "/"
@@ -149,9 +155,13 @@
       "hideExplore": {
         "selectors": [
           ".news-module",
-          "#feed-news-module"
+          "#feed-news-module",
+          "[data-test-id=\"news-module\"]",
+          ".scaffold-layout__aside .feed-shared-news-module",
+          ".scaffold-layout__aside [data-view-name=\"feed_news\"]"
         ],
         "pathPrefixes": [
+          "/",
           "/feed"
         ],
         "excludedPathPrefixes": []
@@ -159,13 +169,20 @@
       "hideFeed": {
         "selectors": [
           "#voyager-feed main#main[aria-label='Main Feed']",
+          "#voyager-feed main#main[aria-label='Fil principal']",
+          "#voyager-feed main#main[aria-label='Fil d’actualité principal']",
           ".scaffold-layout__content main[aria-label='Main Feed'] > div:has([data-finite-scroll-hotkey-context='FEED'])",
           ".scaffold-layout__content main[aria-label='Main Feed'] > div:has(scaffold-finite-scroll__content)",
+          ".scaffold-layout__content main > div:has([data-finite-scroll-hotkey-context='FEED'])",
+          ".scaffold-layout__main .scaffold-finite-scroll",
+          ".scaffold-layout__main .scaffold-finite-scroll__content",
           ".feed-shared-update-v2:not(section.fixed-full > .feed-shared-update-v2):not(div:not([data-id]) > .occludable-update > .feed-shared-update-v2)",
           "div[data-testid='mainFeed']",
-          "div[componentkey*='mainFeed']"
+          "div[componentkey*='mainFeed']",
+          ".feeds .feed-container"
         ],
         "feedPathPrefixes": [
+          "/",
           "/feed"
         ],
         "excludedPathPrefixes": [],
